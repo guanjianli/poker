@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainPanelSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:UILayer touchEnabled="false" width="1280" height="720">
+        <e:Rect height="100%" width="100%" fillColor="0xD2EBD8" y="0" />
+        <e:Group id="part1" width="100%" touchEnabled="false">
+            <e:Group id='myView' touchEnabled="false" y="0" x="0">
+                <e:Image source="main_bg" width="100%" y="0" x="0" />
+                <e:Image source="score_1_png" x="10" y="0" />
+                <e:Label text="{userName}" x="103.5" y="18" fontFamily="微软雅黑" size="22" />
+                <e:Label text="{lv}" x="65" y="56.5" size="17" fontFamily="微软雅黑" />
+                <e:Label text="主界面系统" textColor="0xff0000" x="65" y="56.5" size="17" fontFamily="微软雅黑" />
+                <e:BitmapLabel text="234234" font="power_fnt"/>
+				<e:BitmapLabel id="b1" width="160" height="20" x="136" y="194" text="34" font="magic_max_fnt"/>
+            </e:Group>
+        </e:Group>
+    </e:UILayer>
+</e:Skin>

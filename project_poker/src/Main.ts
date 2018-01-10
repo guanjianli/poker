@@ -29,11 +29,13 @@ class Main extends eui.UILayer {
 
     private async runGame() {
         await this.loadResource()
-        this.createGameScene();
+        //this.createGameScene();
         //const result = await RES.getResAsync("description_json")
         await platform.login();
         const userInfo = await platform.getUserInfo();
         console.log(userInfo);
+        var mp =  new MainPanelView();
+        this.addChild(mp);
     }
 
     private async loadResource() {

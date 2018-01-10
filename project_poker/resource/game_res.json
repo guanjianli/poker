@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"main_bg",
+			"keys":"main_bg,power_fnt",
 			"name":"preload"
 		}],
 	"resources":[
@@ -28,6 +28,86 @@
 			"name":"star_png",
 			"type":"image",
 			"url":"game_assets/main/star.png"
+		},
+		{
+			"name":"activity_fnt",
+			"type":"font",
+			"url":"game_assets/font/activity/activity.fnt"
+		},
+		{
+			"name":"charge_fnt",
+			"type":"font",
+			"url":"game_assets/font/charge/charge.fnt"
+		},
+		{
+			"name":"currency_fnt",
+			"type":"font",
+			"url":"game_assets/font/currency/currency.fnt"
+		},
+		{
+			"name":"group_buy_fnt",
+			"type":"font",
+			"url":"game_assets/font/group_buy/group_buy.fnt"
+		},
+		{
+			"name":"level_fnt",
+			"type":"font",
+			"url":"game_assets/font/level/level.fnt"
+		},
+		{
+			"name":"lijinhei_fnt",
+			"type":"font",
+			"url":"game_assets/font/lijinhei/lijinhei.fnt"
+		},
+		{
+			"name":"lijinhei_txt",
+			"type":"text",
+			"url":"game_assets/font/lijinhei/lijinhei.txt"
+		},
+		{
+			"name":"magic_fnt",
+			"type":"font",
+			"url":"game_assets/font/magic/magic.fnt"
+		},
+		{
+			"name":"magic_max_fnt",
+			"type":"font",
+			"url":"game_assets/font/magic_max/magic_max.fnt"
+		},
+		{
+			"name":"power_fnt",
+			"type":"font",
+			"url":"game_assets/font/power/power.fnt"
+		},
+		{
+			"name":"prop_fnt",
+			"type":"font",
+			"url":"game_assets/font/prop/prop.fnt"
+		},
+		{
+			"name":"rein_fnt",
+			"type":"font",
+			"url":"game_assets/font/rein/rein.fnt"
+		},
+		{
+			"name":"rmb_fnt",
+			"type":"font",
+			"url":"game_assets/font/rmb/rmb.fnt"
+		},
+		{
+			"name":"slot_fnt",
+			"type":"font",
+			"url":"game_assets/font/slot/slot.fnt"
+		},
+		{
+			"name":"stage_fnt",
+			"type":"font",
+			"url":"game_assets/font/stage/stage.fnt"
+		},
+		{
+			"name":"weapon_fnt",
+			"type":"font",
+			"url":"game_assets/font/weapon/weapon.fnt"
 		}
 	]
 }

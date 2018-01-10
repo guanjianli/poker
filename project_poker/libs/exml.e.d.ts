@@ -50,3 +50,5 @@ declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
 }
+declare class MainPanelSkin extends eui.Skin{
+}
