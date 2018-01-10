@@ -1,0 +1,33 @@
+{
+	"groups":[{
+			"keys":"main_bg",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"main_bg",
+			"type":"image",
+			"url":"game_assets/main/loading1.jpg"
+		},
+		{
+			"name":"score_1_png",
+			"type":"image",
+			"url":"game_assets/main/score_1.png"
+		},
+		{
+			"name":"score_2_png",
+			"type":"image",
+			"url":"game_assets/main/score_2.png"
+		},
+		{
+			"name":"score_7_png",
+			"type":"image",
+			"url":"game_assets/main/score_7.png"
+		},
+		{
+			"name":"star_png",
+			"type":"image",
+			"url":"game_assets/main/star.png"
+		}
+	]
+}
