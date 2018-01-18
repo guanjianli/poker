@@ -1,18 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <e:Skin class="MainPanelSkin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
-    <e:UILayer touchEnabled="false" width="1280" height="720">
+    <e:UILayer touchEnabled="true" width="1280" height="720">
         <e:Rect height="100%" width="100%" fillColor="0xD2EBD8" y="0" />
-        <e:Group id="part1" width="100%" touchEnabled="false">
-            <e:Group id='myView' touchEnabled="false" y="0" x="0">
-                <e:Image source="main_bg" width="100%" y="0" x="0" />
-                <e:Image source="score_1_png" x="10" y="0" />
-                <e:Label text="{userName}" x="103.5" y="18" fontFamily="微软雅黑" size="22" />
-                <e:Label text="{lv}" x="65" y="56.5" size="17" fontFamily="微软雅黑" />
-                <e:Label text="主界面系统" textColor="0xff0000" x="65" y="56.5" size="17" fontFamily="微软雅黑" />
-                <e:BitmapLabel text="234234" font="power_fnt"/>
-				<e:BitmapLabel id="b1" width="160" height="20" x="136" y="194" text="34" font="magic_max_fnt"/>
+        <e:Group id='myView' touchEnabled="false" y="0" x="0">
+            <e:Image source="main_bg" width="100%" y="0" x="0" />
+            <e:Group id="userInfo"  y="0" x="0"> 
+                    <e:Image source="girl_1_png" y="9.5" anchorOffsetX="0" width="83" anchorOffsetY="0" height="77"/>
+                    <e:Label text="{userName}" x="83" y="9.5" fontFamily="微软雅黑" size="22" />
+
+            </e:Group>         
+            <e:Group id='roomMode' anchorOffsetX="0" percentWidth="60" anchorOffsetY="0"  horizontalCenter="0" verticalCenter="-30">
+                <e:Group name="picgrp" touchChildren="true" touchEnabled="true" id="mode_1" horizontalCenter="0" verticalCenter="0" percentWidth="33">
+                    <e:Image name="pic1" source="Hall_RoomBG3_png" />
+                    <e:Image source="Hall_RoomName2_png"  horizontalCenter="4" bottom="0"/>
+                </e:Group>
+                <e:Group id="mode_2" horizontalCenter="250" verticalCenter="0" percentWidth="33">
+                    <e:Image source="Hall_RoomBG2_png" />
+                    <e:Image source="Hall_RoomName3_png"  horizontalCenter="12" bottom="0"/>
+                </e:Group>
+    		    <e:Group id="mode_3" horizontalCenter="-250" verticalCenter="0" percentWidth="33">
+                    <e:Image source="Hall_RoomBG1_png"    name="pic11"/>
+                    <e:Image source="Hall_RoomName1_png"  horizontalCenter="4" bottom="0"/>
+                </e:Group>
             </e:Group>
+							
+							
         </e:Group>
     </e:UILayer>
 </e:Skin>

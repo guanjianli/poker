@@ -7,7 +7,7 @@
 		{
 			"name":"main_bg",
 			"type":"image",
-			"url":"game_assets/main/loading1.jpg"
+			"url":"game_assets/main/hall_background.jpg"
 		},
 		{
 			"name":"score_1_png",
@@ -108,6 +108,66 @@
 			"name":"weapon_fnt",
 			"type":"font",
 			"url":"game_assets/font/weapon/weapon.fnt"
+		},
+		{
+			"name":"Hall_RoomBG2_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomBG2.png"
+		},
+		{
+			"name":"Hall_RoomBG1_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomBG1.png"
+		},
+		{
+			"name":"Hall_RoomBG3_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomBG3.png"
+		},
+		{
+			"name":"Hall_RoomName3_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomName3.png"
+		},
+		{
+			"name":"Hall_RoomName1_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomName1.png"
+		},
+		{
+			"name":"Hall_RoomName2_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomName2.png"
+		},
+		{
+			"name":"girl_1_png",
+			"type":"image",
+			"url":"game_assets/user/girl_1.png"
+		},
+		{
+			"name":"girl_1_lose_png",
+			"type":"image",
+			"url":"game_assets/user/girl_1_lose.png"
+		},
+		{
+			"name":"girl_1_win_png",
+			"type":"image",
+			"url":"game_assets/user/girl_1_win.png"
+		},
+		{
+			"name":"man_1_png",
+			"type":"image",
+			"url":"game_assets/user/man_1.png"
+		},
+		{
+			"name":"man_1_lose_png",
+			"type":"image",
+			"url":"game_assets/user/man_1_lose.png"
+		},
+		{
+			"name":"man_1_win_png",
+			"type":"image",
+			"url":"game_assets/user/man_1_win.png"
 		}
 	]
 }
