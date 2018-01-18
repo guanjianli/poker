@@ -36,6 +36,9 @@ class Main extends eui.UILayer {
         console.log(userInfo);
         var mp =  new MainPanelView();
         this.addChild(mp);
+
+        var ws = new WebSocketExample();
+        this.addChild(ws);
     }
 
     private async loadResource() {

@@ -33,6 +33,7 @@
     {
       "name": "promise"
     },
+    {"name": "socket"},
     {
       "name": "when",
       "path": "..\\extensions\\when"
