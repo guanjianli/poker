@@ -23,9 +23,12 @@
                     <e:Image source="Hall_RoomBG1_png"    name="pic11"/>
                     <e:Image source="Hall_RoomName1_png"  horizontalCenter="4" bottom="0"/>
                 </e:Group>
-            </e:Group>
-							
-							
+            </e:Group>		
+			<e:Button touchEnabled="true" horizontalCenter="0"  bottom="120">
+                <e:Skin states="up,down">
+                    <e:Image source="enter_png" width="100%" y="0" x="0" scaleX.up="1" scaleX.down="0.95" scaleY.up="1" scaleY.down="0.95" />
+                </e:Skin>
+            </e:Button>
         </e:Group>
     </e:UILayer>
 </e:Skin>

@@ -1,173 +1,180 @@
 {
-	"groups":[{
-			"keys":"main_bg,power_fnt",
-			"name":"preload"
-		}],
-	"resources":[
+	"groups": [
 		{
-			"name":"main_bg",
-			"type":"image",
-			"url":"game_assets/main/hall_background.jpg"
+			"keys": "main_bg,power_fnt,bt_denglu_down022_png,enter_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "main_bg",
+			"type": "image",
+			"url": "game_assets/main/hall_background.jpg"
 		},
 		{
-			"name":"score_1_png",
-			"type":"image",
-			"url":"game_assets/main/score_1.png"
+			"name": "score_1_png",
+			"type": "image",
+			"url": "game_assets/main/score_1.png"
 		},
 		{
-			"name":"score_2_png",
-			"type":"image",
-			"url":"game_assets/main/score_2.png"
+			"name": "score_2_png",
+			"type": "image",
+			"url": "game_assets/main/score_2.png"
 		},
 		{
-			"name":"score_7_png",
-			"type":"image",
-			"url":"game_assets/main/score_7.png"
+			"name": "score_7_png",
+			"type": "image",
+			"url": "game_assets/main/score_7.png"
 		},
 		{
-			"name":"star_png",
-			"type":"image",
-			"url":"game_assets/main/star.png"
+			"name": "star_png",
+			"type": "image",
+			"url": "game_assets/main/star.png"
 		},
 		{
-			"name":"activity_fnt",
-			"type":"font",
-			"url":"game_assets/font/activity/activity.fnt"
+			"name": "activity_fnt",
+			"type": "font",
+			"url": "game_assets/font/activity/activity.fnt"
 		},
 		{
-			"name":"charge_fnt",
-			"type":"font",
-			"url":"game_assets/font/charge/charge.fnt"
+			"name": "charge_fnt",
+			"type": "font",
+			"url": "game_assets/font/charge/charge.fnt"
 		},
 		{
-			"name":"currency_fnt",
-			"type":"font",
-			"url":"game_assets/font/currency/currency.fnt"
+			"name": "currency_fnt",
+			"type": "font",
+			"url": "game_assets/font/currency/currency.fnt"
 		},
 		{
-			"name":"group_buy_fnt",
-			"type":"font",
-			"url":"game_assets/font/group_buy/group_buy.fnt"
+			"name": "group_buy_fnt",
+			"type": "font",
+			"url": "game_assets/font/group_buy/group_buy.fnt"
 		},
 		{
-			"name":"level_fnt",
-			"type":"font",
-			"url":"game_assets/font/level/level.fnt"
+			"name": "level_fnt",
+			"type": "font",
+			"url": "game_assets/font/level/level.fnt"
 		},
 		{
-			"name":"lijinhei_fnt",
-			"type":"font",
-			"url":"game_assets/font/lijinhei/lijinhei.fnt"
+			"name": "lijinhei_fnt",
+			"type": "font",
+			"url": "game_assets/font/lijinhei/lijinhei.fnt"
 		},
 		{
-			"name":"lijinhei_txt",
-			"type":"text",
-			"url":"game_assets/font/lijinhei/lijinhei.txt"
+			"name": "lijinhei_txt",
+			"type": "text",
+			"url": "game_assets/font/lijinhei/lijinhei.txt"
 		},
 		{
-			"name":"magic_fnt",
-			"type":"font",
-			"url":"game_assets/font/magic/magic.fnt"
+			"name": "magic_fnt",
+			"type": "font",
+			"url": "game_assets/font/magic/magic.fnt"
 		},
 		{
-			"name":"magic_max_fnt",
-			"type":"font",
-			"url":"game_assets/font/magic_max/magic_max.fnt"
+			"name": "magic_max_fnt",
+			"type": "font",
+			"url": "game_assets/font/magic_max/magic_max.fnt"
 		},
 		{
-			"name":"power_fnt",
-			"type":"font",
-			"url":"game_assets/font/power/power.fnt"
+			"name": "power_fnt",
+			"type": "font",
+			"url": "game_assets/font/power/power.fnt"
 		},
 		{
-			"name":"prop_fnt",
-			"type":"font",
-			"url":"game_assets/font/prop/prop.fnt"
+			"name": "prop_fnt",
+			"type": "font",
+			"url": "game_assets/font/prop/prop.fnt"
 		},
 		{
-			"name":"rein_fnt",
-			"type":"font",
-			"url":"game_assets/font/rein/rein.fnt"
+			"name": "rein_fnt",
+			"type": "font",
+			"url": "game_assets/font/rein/rein.fnt"
 		},
 		{
-			"name":"rmb_fnt",
-			"type":"font",
-			"url":"game_assets/font/rmb/rmb.fnt"
+			"name": "rmb_fnt",
+			"type": "font",
+			"url": "game_assets/font/rmb/rmb.fnt"
 		},
 		{
-			"name":"slot_fnt",
-			"type":"font",
-			"url":"game_assets/font/slot/slot.fnt"
+			"name": "slot_fnt",
+			"type": "font",
+			"url": "game_assets/font/slot/slot.fnt"
 		},
 		{
-			"name":"stage_fnt",
-			"type":"font",
-			"url":"game_assets/font/stage/stage.fnt"
+			"name": "stage_fnt",
+			"type": "font",
+			"url": "game_assets/font/stage/stage.fnt"
 		},
 		{
-			"name":"weapon_fnt",
-			"type":"font",
-			"url":"game_assets/font/weapon/weapon.fnt"
+			"name": "weapon_fnt",
+			"type": "font",
+			"url": "game_assets/font/weapon/weapon.fnt"
 		},
 		{
-			"name":"Hall_RoomBG2_png",
-			"type":"image",
-			"url":"game_assets/main/Hall_RoomBG2.png"
+			"name": "Hall_RoomBG2_png",
+			"type": "image",
+			"url": "game_assets/main/Hall_RoomBG2.png"
 		},
 		{
-			"name":"Hall_RoomBG1_png",
-			"type":"image",
-			"url":"game_assets/main/Hall_RoomBG1.png"
+			"name": "Hall_RoomBG1_png",
+			"type": "image",
+			"url": "game_assets/main/Hall_RoomBG1.png"
 		},
 		{
-			"name":"Hall_RoomBG3_png",
-			"type":"image",
-			"url":"game_assets/main/Hall_RoomBG3.png"
+			"name": "Hall_RoomBG3_png",
+			"type": "image",
+			"url": "game_assets/main/Hall_RoomBG3.png"
 		},
 		{
-			"name":"Hall_RoomName3_png",
-			"type":"image",
-			"url":"game_assets/main/Hall_RoomName3.png"
+			"name": "Hall_RoomName3_png",
+			"type": "image",
+			"url": "game_assets/main/Hall_RoomName3.png"
 		},
 		{
-			"name":"Hall_RoomName1_png",
-			"type":"image",
-			"url":"game_assets/main/Hall_RoomName1.png"
+			"name": "Hall_RoomName1_png",
+			"type": "image",
+			"url": "game_assets/main/Hall_RoomName1.png"
 		},
 		{
-			"name":"Hall_RoomName2_png",
-			"type":"image",
-			"url":"game_assets/main/Hall_RoomName2.png"
+			"name": "Hall_RoomName2_png",
+			"type": "image",
+			"url": "game_assets/main/Hall_RoomName2.png"
 		},
 		{
-			"name":"girl_1_png",
-			"type":"image",
-			"url":"game_assets/user/girl_1.png"
+			"name": "girl_1_png",
+			"type": "image",
+			"url": "game_assets/user/girl_1.png"
 		},
 		{
-			"name":"girl_1_lose_png",
-			"type":"image",
-			"url":"game_assets/user/girl_1_lose.png"
+			"name": "girl_1_lose_png",
+			"type": "image",
+			"url": "game_assets/user/girl_1_lose.png"
 		},
 		{
-			"name":"girl_1_win_png",
-			"type":"image",
-			"url":"game_assets/user/girl_1_win.png"
+			"name": "girl_1_win_png",
+			"type": "image",
+			"url": "game_assets/user/girl_1_win.png"
 		},
 		{
-			"name":"man_1_png",
-			"type":"image",
-			"url":"game_assets/user/man_1.png"
+			"name": "man_1_png",
+			"type": "image",
+			"url": "game_assets/user/man_1.png"
 		},
 		{
-			"name":"man_1_lose_png",
-			"type":"image",
-			"url":"game_assets/user/man_1_lose.png"
+			"name": "man_1_lose_png",
+			"type": "image",
+			"url": "game_assets/user/man_1_lose.png"
 		},
 		{
-			"name":"man_1_win_png",
-			"type":"image",
-			"url":"game_assets/user/man_1_win.png"
+			"name": "man_1_win_png",
+			"type": "image",
+			"url": "game_assets/user/man_1_win.png"
+		},
+		{
+			"name": "enter_png",
+			"type": "image",
+			"url": "game_assets/main/enter.png"
 		}
 	]
 }
