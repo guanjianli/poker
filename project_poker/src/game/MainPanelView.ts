@@ -9,6 +9,7 @@ class MainPanelView extends eui.Component {
         this.init();
     }
 
+    private mode_1:eui.Group;
     public dispose() {
 
         this.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTap, this);
@@ -38,11 +39,17 @@ class MainPanelView extends eui.Component {
     }
 
     private bindEvent() {
-        this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTap, this);
+       // this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTap, this);
     }
 
     private onTouchTap(e):void {
+        console.log(e.target.name)
         if (!e.target) { return; }
+    }
+
+        private onTouchTapGp(e):void {
+        console.log("click on me ")
+        
     }
 
     private userName:string;
