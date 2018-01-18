@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="card" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
+<e:Skin class="card" width="133" height="178" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:UILayer touchEnabled="true" width="100%"  anchorOffsetX="0" anchorOffsetY="0">
+            <e:Group id='card' touchEnabled="false" y="0" x="0">
+                <e:Image source="card_front_png" width="100%" y="0" x="0" />
+                <!--数字和花色的source、标签的visible要改成动态读的-->
+                <e:Image source="black_value_1_png" x="12" y="10" height="40"/>
+                <e:Image source="shap_2_png" x="12" y="56" anchorOffsetX="0" width="32" anchorOffsetY="0" height="31"/>
+                <e:Image source="shap_2_png" x="56" y="95"/>
+                <e:Image source="card_bigtip_png" x="87" y="5" visible="true"/>
+            </e:Group>
+        </e:UILayer>
 </e:Skin>
