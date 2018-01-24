@@ -19,7 +19,7 @@ class Main extends eui.UILayer {
         //注入自定义的素材解析器
         let assetAdapter = new AssetAdapter();
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
-        //egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
+        egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
 
 
         this.runGame().catch(e => {
@@ -29,16 +29,13 @@ class Main extends eui.UILayer {
 
     private async runGame() {
         await this.loadResource()
-        //this.createGameScene();
-        //const result = await RES.getResAsync("description_json")
+        this.createGameScene();
+        // const result = await RES.getResAsync("description_json")
+        // this.startAnimation(result);
         await platform.login();
         const userInfo = await platform.getUserInfo();
         console.log(userInfo);
-        var mp =  new MainPanelView();
-        this.addChild(mp);
 
-        var ws = new WebSocketExample();
-        this.addChild(ws);
     }
 
     private async loadResource() {
@@ -46,7 +43,7 @@ class Main extends eui.UILayer {
             const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/game_res.json", "resource/");
-            //await this.loadTheme();
+            await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
             this.stage.removeChild(loadingView);
         }
@@ -63,6 +60,7 @@ class Main extends eui.UILayer {
             theme.addEventListener(eui.UIEvent.COMPLETE, () => {
                 resolve();
             }, this);
+
         })
     }
 
@@ -71,34 +69,8 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        let sky = this.createBitmapByName("main_bg");
-        this.addChild(sky);
-        console.log(sky.$getWidth())
-        let stageW = this.stage.stageWidth;
-        let stageH = this.stage.stageHeight;
-        sky.width = stageW;
-        sky.height = stageH;
-
-        sky.touchEnabled = true;
-        sky.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
-    }
-    /**
-     * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
-     * Create a Bitmap object according to name keyword.As for the property of name please refer to the configuration file of resources/resource.json.
-     */
-    private createBitmapByName(name: string): egret.Bitmap {
-        let result = new egret.Bitmap();
-        let texture: egret.Texture = RES.getRes(name);
-        result.texture = texture;
-        return result;
+        var mp =  new MainPanelView();
+        this.addChild(mp);
     }
 
-
-    /**
-     * 点击按钮
-     * Click the button
-     */
-    private onButtonClick(e: egret.TouchEvent) {
-        console.log("this click ")
-    }
 }

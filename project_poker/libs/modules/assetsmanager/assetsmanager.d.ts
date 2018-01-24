@@ -1,32 +1,3 @@
-declare module RES {
-    interface File {
-        url: string;
-        type: string;
-        name: string;
-    }
-    interface Dictionary {
-        [file: string]: File | Dictionary;
-    }
-    interface FileSystem {
-        addFile(filename: string, type?: string): any;
-        getFile(filename: string): File | null;
-        profile(): void;
-    }
-    class NewFileSystem {
-        private data;
-        constructor(data: Dictionary);
-        profile(): void;
-        addFile(filename: string, type?: string): void;
-        getFile(filename: string): File | null;
-        private basename(filename);
-        private normalize(filename);
-        private dirname(path);
-        private reslove(dirpath);
-        private mkdir(dirpath);
-        private exists(dirpath);
-    }
-    var fileSystem: FileSystem;
-}
 declare type ResourceRootSelector<T extends string> = () => T;
 declare type ResourceTypeSelector = (file: string) => string;
 declare type ResourceNameSelector = (file: string) => string;
@@ -48,6 +19,8 @@ declare module RES {
         size?: number;
         name: string;
         soundType?: string;
+        scale9grid?: string;
+        groupName?: string;
         /**
          * 是否被资源管理器进行管理，默认值为 false
          */
@@ -125,7 +98,44 @@ declare module RES {
      * @private
      */
     class ResourceLoader {
-        load(list: ResourceInfo[], reporter?: PromiseTaskReporter): Promise<ResourceInfo | ResourceInfo[]>;
+        /**
+         * 当前组加载的项总个数,key为groupName
+         */
+        private groupTotalDic;
+        /**
+         * 已经加载的项个数,key为groupName
+         */
+        private numLoadedDic;
+        /**
+         * 正在加载的组列表,key为groupName
+         */
+        private itemListDic;
+        /**
+         * 加载失败的组,key为groupName
+         */
+        private groupErrorDic;
+        private retryTimesDic;
+        maxRetryTimes: number;
+        /**
+         * 优先级队列,key为priority，value为groupName列表
+         */
+        private priorityQueue;
+        private reporterDic;
+        private dispatcherDic;
+        private failedList;
+        load(list: ResourceInfo[], groupName: string, priority: number, reporter?: PromiseTaskReporter): Promise<any>;
+        private loadingCount;
+        thread: number;
+        private next();
+        /**
+         * 从优先级队列中移除指定的组名
+         */
+        private removeGroupName(groupName);
+        private queueIndex;
+        /**
+         * 获取下一个待加载项
+         */
+        private getOneResourceInfo();
         loadResource(r: ResourceInfo, p?: RES.processor.Processor): Promise<any>;
         unloadResource(r: ResourceInfo): Promise<any>;
     }
@@ -185,6 +195,48 @@ declare namespace RES {
          */
         onCancel?: () => void;
     }
+}
+declare module RES {
+    let checkNull: MethodDecorator;
+    /**
+     * 功能开关
+     *  LOADING_STATE：处理重复加载
+     */
+    let FEATURE_FLAG: {
+        FIX_DUPLICATE_LOAD: number;
+    };
+    namespace upgrade {
+        function setUpgradeGuideLevel(level: "warning" | "silent"): void;
+    }
+}
+declare module RES {
+    interface File {
+        url: string;
+        type: string;
+        name: string;
+    }
+    interface Dictionary {
+        [file: string]: File | Dictionary;
+    }
+    interface FileSystem {
+        addFile(filename: string, type?: string): any;
+        getFile(filename: string): File | null;
+        profile(): void;
+    }
+    class NewFileSystem {
+        private data;
+        constructor(data: Dictionary);
+        profile(): void;
+        addFile(filename: string, type?: string): void;
+        getFile(filename: string): File | null;
+        private basename(filename);
+        private normalize(filename);
+        private dirname(path);
+        private reslove(dirpath);
+        private mkdir(dirpath);
+        private exists(dirpath);
+    }
+    var fileSystem: FileSystem;
 }
 declare module RES.processor {
     interface Processor {
@@ -555,19 +607,6 @@ declare module RES {
         soundType?: string;
     }
 }
-declare module RES {
-    let checkNull: MethodDecorator;
-    /**
-     * 功能开关
-     *  LOADING_STATE：处理重复加载
-     */
-    let FEATURE_FLAG: {
-        FIX_DUPLICATE_LOAD: number;
-    };
-    namespace upgrade {
-        function setUpgradeGuideLevel(level: "warning" | "silent"): void;
-    }
-}
 declare namespace RES {
 }
 declare module RES {
@@ -605,7 +644,7 @@ declare module RES {
      * @platform Web,Native
      * @language zh_CN
      */
-    function loadConfig(url?: string, resourceRoot?: string): Promise<void>;
+    function loadConfig(url: string, resourceRoot: string): Promise<void>;
     /**
      * Load a set of resources according to the group name.
      * @param name Group name to load the resource group.
@@ -954,7 +993,7 @@ declare module RES {
          */
         loadGroup(name: string, priority?: number, reporter?: PromiseTaskReporter): Promise<any>;
         private _loadGroup(name, priority?, reporter?);
-        loadResources(keys: string[], reporter?: PromiseTaskReporter): Promise<ResourceInfo | ResourceInfo[]>;
+        loadResources(keys: string[], reporter?: PromiseTaskReporter): Promise<any>;
         /**
          * 创建自定义的加载资源组,注意：此方法仅在资源配置文件加载完成后执行才有效。
          * 可以监听ResourceEvent.CONFIG_COMPLETE事件来确认配置加载完成。

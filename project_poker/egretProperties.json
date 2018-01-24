@@ -1,10 +1,10 @@
 {
-  "engineVersion": "5.1.2",
-  "compilerVersion": "5.1.2",
+  "engineVersion": "5.1.3",
+  "compilerVersion": "5.1.3",
+  "template": {},
   "target": {
     "current": "web"
   },
-  "template": {},
   "eui": {
     "exmlRoot": [
       "resource/eui_skins"
@@ -28,19 +28,7 @@
       "name": "tween"
     },
     {
-      "name": "dragonBones"
-    },
-    {
       "name": "promise"
-    },
-    {"name": "socket"},
-    {
-      "name": "when",
-      "path": "..\\extensions\\when"
-    },
-    {
-      "name": "underscore",
-      "path": "..\\extensions\\underscore"
     }
   ]
 }

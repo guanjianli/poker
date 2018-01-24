@@ -5,20 +5,14 @@
 		"libs/modules/eui/eui.js",
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/tween/tween.js",
-		"libs/modules/dragonBones/dragonBones.js",
-		"libs/modules/promise/promise.js",
-		"libs/modules/socket/socket.js",
-		"libs/modules/when/when.js",
-		"libs/modules/underscore/underscore.js"
+		"libs/modules/promise/promise.js"
 	],
 	"game": [
 		"bin-debug/AssetAdapter.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
+		"bin-debug/MainPanelView.js",
 		"bin-debug/Platform.js",
-		"bin-debug/ThemeAdapter.js",
-		"bin-debug/game/MainPanelView.js",
-		"bin-debug/game/Util.js",
-		"bin-debug/game/WebSocketExample.js"
+		"bin-debug/ThemeAdapter.js"
 	]
 }

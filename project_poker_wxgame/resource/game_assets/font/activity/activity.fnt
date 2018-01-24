@@ -1,0 +1,11 @@
+{"file":"activity.png","frames":{
+"0":{"x":1,"y":18,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"1":{"x":14,"y":35,"w":10,"h":15,"offX":1,"offY":0,"sourceW":12,"sourceH":15},
+"2":{"x":15,"y":18,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"3":{"x":29,"y":18,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"4":{"x":29,"y":1,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"5":{"x":43,"y":18,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"6":{"x":15,"y":1,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"7":{"x":1,"y":35,"w":11,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"8":{"x":1,"y":1,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15},
+"9":{"x":43,"y":1,"w":12,"h":15,"offX":0,"offY":0,"sourceW":12,"sourceH":15}}}

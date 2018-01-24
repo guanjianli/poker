@@ -1,0 +1,17 @@
+{"file":"power.png","frames":{
+"-":{"x":113,"y":187,"w":55,"h":38,"offX":0,"offY":14,"sourceW":55,"sourceH":60},
+"：":{"x":170,"y":187,"w":36,"h":47,"offX":0,"offY":13,"sourceW":36,"sourceH":60},
+"+":{"x":57,"y":187,"w":54,"h":57,"offX":0,"offY":3,"sourceW":54,"sourceH":60},
+"0":{"x":192,"y":63,"w":59,"h":60,"offX":0,"offY":0,"sourceW":59,"sourceH":60},
+"1":{"x":203,"y":1,"w":48,"h":60,"offX":0,"offY":0,"sourceW":48,"sourceH":60},
+"2":{"x":70,"y":1,"w":65,"h":60,"offX":0,"offY":0,"sourceW":65,"sourceH":60},
+"3":{"x":67,"y":63,"w":62,"h":60,"offX":0,"offY":0,"sourceW":62,"sourceH":60},
+"4":{"x":1,"y":125,"w":59,"h":60,"offX":0,"offY":0,"sourceW":59,"sourceH":60},
+"5":{"x":1,"y":63,"w":64,"h":60,"offX":0,"offY":0,"sourceW":64,"sourceH":60},
+"6":{"x":180,"y":125,"w":55,"h":60,"offX":0,"offY":0,"sourceW":55,"sourceH":60},
+"7":{"x":131,"y":63,"w":59,"h":60,"offX":0,"offY":0,"sourceW":59,"sourceH":60},
+"8":{"x":1,"y":1,"w":67,"h":60,"offX":0,"offY":0,"sourceW":67,"sourceH":60},
+"9":{"x":1,"y":187,"w":54,"h":60,"offX":0,"offY":0,"sourceW":54,"sourceH":60},
+"斗":{"x":122,"y":125,"w":56,"h":60,"offX":0,"offY":0,"sourceW":56,"sourceH":60},
+"力":{"x":62,"y":125,"w":58,"h":60,"offX":0,"offY":0,"sourceW":58,"sourceH":60},
+"战":{"x":137,"y":1,"w":64,"h":60,"offX":0,"offY":0,"sourceW":64,"sourceH":60}}}
