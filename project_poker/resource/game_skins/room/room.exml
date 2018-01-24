@@ -5,6 +5,29 @@
             <e:Rect height="100%" width="100%" fillColor="0xD2EBD8" y="0" />
             <e:Group id='myView' touchEnabled="false" y="0" x="0">
                 <e:Image source="main_bg" width="100%" y="0" x="0" />
+                <e:Group id="self_user">
+                </e:Group>
+                <e:Group id="left_user" left="32" y="168.5">
+                    <e:Image source="girl_1_png" horizontalCenter="0"/>
+                    <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" x="12" y="117"/>
+                    <e:Label text="0" textColor="0xffcc00"  x="45" y="123" borderColor="0x6666ff" border="true" anchorOffsetX="0" width="70" background="true" backgroundColor="0x6699ff"/>
+                    <e:Label text="0123456789" textColor="0x6666ff" x="1" y="159" horizontalCenter="5" anchorOffsetY="0" height="19" anchorOffsetX="0" width="161"/>
+                </e:Group>
+                <e:Group id="top_user" top="20" horizontalCenter="0.5" anchorOffsetX="0" width="171" anchorOffsetY="0" height="169">
+                    <e:Image source="girl_1_png" horizontalCenter="0"/>
+                    <e:Image source="man_1_png" anchorOffsetX="0" width="32" anchorOffsetY="0" height="31" x="44" y="108"/>
+                    <e:Label text="0" textColor="0xffcc00"  x="76" y="111" borderColor="0x6666ff" border="true" anchorOffsetX="0" width="65" background="true" backgroundColor="0x6699ff" anchorOffsetY="0" height="22"/>
+                    <e:Label text="0123456789" textColor="0x6666ff" x="1" y="139" horizontalCenter="1" anchorOffsetY="0" height="19" anchorOffsetX="0" width="161"/>
+                </e:Group>
+                <e:Group id="righ_user" right="8" y="168.5">
+                    <e:Image source="girl_1_png" horizontalCenter="0"/>
+                    <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" x="12" y="117"/>
+                    <e:Label text="0" textColor="0xffcc00"  x="45" y="123" borderColor="0x6666ff" border="true" anchorOffsetX="0" width="70" background="true" backgroundColor="0x6699ff"/>
+                    <e:Label text="0123456789" textColor="0x6666ff" x="1" y="159" horizontalCenter="5" anchorOffsetY="0" height="19" anchorOffsetX="0" width="161"/>
+                </e:Group>
+							
+							
+				
             </e:Group>
         </e:UILayer>
 </e:Skin>
