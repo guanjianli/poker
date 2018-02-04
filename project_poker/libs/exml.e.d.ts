@@ -52,7 +52,7 @@ declare module skins{
 }
 declare class MainPanelSkin extends eui.Skin{
 }
-declare class room extends eui.Skin{
-}
 declare class card extends eui.Skin{
+}
+declare class room extends eui.Skin{
 }

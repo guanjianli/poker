@@ -1,14 +1,22 @@
 /**
  * 下面的示例使用 WebSocketExample 类创建新 WebSocket 对象，然后与服务器通讯。
  */
-class WebSocketExample extends egret.DisplayObjectContainer {
+class Service extends egret.DisplayObjectContainer {
 
     public constructor() {
         super();
-
         this.initStateText();
         this.initWebSocket();
     }
+
+    public static _instance:Service;
+
+    public static instance = ()=>{
+        if (Service._instance) {
+            return Service._instance;
+        }
+        Service._instance = new Service();
+    };
 
     private stateText:egret.TextField;
     private text:string = "TestWebSocket";
@@ -37,10 +45,10 @@ class WebSocketExample extends egret.DisplayObjectContainer {
         //添加异常侦听，出现异常会调用此方法
         this.socket.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onSocketError, this);
         //连接服务器
-        this.socket.connect("127.0.0.1", 8080);
+        this.socket.connectByUrl("wws://www.liguanjian.com");
     }
 
-    private sendData():void {
+    public post(cmd:string, param:Object):void {
         // //创建 ByteArray 对象
         // var byte:egret.ByteArray = new egret.ByteArray();
         // //写入字符串信息
@@ -53,13 +61,15 @@ class WebSocketExample extends egret.DisplayObjectContainer {
         // //发送数据
         // this.socket.writeUTF("1000")
         // //this.socket.writeBytes(byte, 0, byte.bytesAvailable);
-        var cmd = '1000';
-        this.socket.writeUTF(cmd);
+        var data = cmd;
+        if (param){
+            data += "#" + JSON.stringify(data)
+        }
+        this.socket.writeUTF(data);
     }
 
     private onSocketOpen():void {
         this.trace("WebSocketOpen");
-        this.sendData();
     }
 
     private onSocketClose():void {

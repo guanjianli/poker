@@ -1,430 +1,433 @@
 {
-	"groups": [
+	"groups":[{
+			"keys":"main_bg,power_fnt,enter_png,shap_1_png,shap_2_png,shap_3_png,shap_4_png,shap_5_png,shap_6_png,smallshap_1_png,smallshap_2_png,smallshap_3_png,smallshap_4_png,smallshap_5_png,smallshap_6_png,black_value_1_png,black_value_2_png,black_value_3_png,black_value_4_png,black_value_5_png,black_value_6_png,black_value_7_png,black_value_8_png,black_value_9_png,black_value_10_png,black_value_11_png,black_value_12_png,black_value_13_png,black_value_joker_png,red_value_1_png,red_value_2_png,red_value_3_png,red_value_4_png,red_value_5_png,red_value_6_png,red_value_7_png,red_value_8_png,red_value_9_png,red_value_10_png,red_value_11_png,red_value_12_png,red_value_13_png,red_value_joker_png,card_back_png,card_bigtip_png,card_flag_png,card_front_png,card_shadow_png,card_star_png,smallcard_back_png,smallcard_front_png",
+			"name":"preload"
+		}],
+	"resources":[
 		{
-			"keys": "main_bg,power_fnt,enter_png,shap_1_png,shap_2_png,shap_3_png,shap_4_png,shap_5_png,shap_6_png,smallshap_1_png,smallshap_2_png,smallshap_3_png,smallshap_4_png,smallshap_5_png,smallshap_6_png,black_value_1_png,black_value_2_png,black_value_3_png,black_value_4_png,black_value_5_png,black_value_6_png,black_value_7_png,black_value_8_png,black_value_9_png,black_value_10_png,black_value_11_png,black_value_12_png,black_value_13_png,black_value_joker_png,red_value_1_png,red_value_2_png,red_value_3_png,red_value_4_png,red_value_5_png,red_value_6_png,red_value_7_png,red_value_8_png,red_value_9_png,red_value_10_png,red_value_11_png,red_value_12_png,red_value_13_png,red_value_joker_png,card_back_png,card_bigtip_png,card_flag_png,card_front_png,card_shadow_png,card_star_png,smallcard_back_png,smallcard_front_png",
-			"name": "preload"
-		}
-	],
-	"resources": [
+			"name":"button_down_png",
+			"type":"image",
+			"url":"assets/Button/button_down.png"
+		},
 		{
-			"url": "assets/Button/button_down.png",
-			"type": "image",
-			"name": "button_down_png"
+			"name":"button_up_png",
+			"type":"image",
+			"url":"assets/Button/button_up.png"
 		},
 		{
-			"url": "assets/Button/button_up.png",
-			"type": "image",
-			"name": "button_up_png"
+			"name":"main_bg",
+			"type":"image",
+			"url":"game_assets/main/hall_background.jpg"
 		},
 		{
-			"name": "main_bg",
-			"type": "image",
-			"url": "game_assets/main/hall_background.jpg"
+			"name":"score_1_png",
+			"type":"image",
+			"url":"game_assets/main/score_1.png"
 		},
 		{
-			"name": "score_1_png",
-			"type": "image",
-			"url": "game_assets/main/score_1.png"
+			"name":"score_2_png",
+			"type":"image",
+			"url":"game_assets/main/score_2.png"
 		},
 		{
-			"name": "score_2_png",
-			"type": "image",
-			"url": "game_assets/main/score_2.png"
+			"name":"score_7_png",
+			"type":"image",
+			"url":"game_assets/main/score_7.png"
 		},
 		{
-			"name": "score_7_png",
-			"type": "image",
-			"url": "game_assets/main/score_7.png"
+			"name":"star_png",
+			"type":"image",
+			"url":"game_assets/main/star.png"
 		},
 		{
-			"name": "star_png",
-			"type": "image",
-			"url": "game_assets/main/star.png"
+			"name":"activity_fnt",
+			"type":"font",
+			"url":"game_assets/font/activity/activity.fnt"
 		},
 		{
-			"name": "activity_fnt",
-			"type": "font",
-			"url": "game_assets/font/activity/activity.fnt"
+			"name":"charge_fnt",
+			"type":"font",
+			"url":"game_assets/font/charge/charge.fnt"
 		},
 		{
-			"name": "charge_fnt",
-			"type": "font",
-			"url": "game_assets/font/charge/charge.fnt"
+			"name":"currency_fnt",
+			"type":"font",
+			"url":"game_assets/font/currency/currency.fnt"
 		},
 		{
-			"name": "currency_fnt",
-			"type": "font",
-			"url": "game_assets/font/currency/currency.fnt"
+			"name":"group_buy_fnt",
+			"type":"font",
+			"url":"game_assets/font/group_buy/group_buy.fnt"
 		},
 		{
-			"name": "group_buy_fnt",
-			"type": "font",
-			"url": "game_assets/font/group_buy/group_buy.fnt"
+			"name":"level_fnt",
+			"type":"font",
+			"url":"game_assets/font/level/level.fnt"
 		},
 		{
-			"name": "level_fnt",
-			"type": "font",
-			"url": "game_assets/font/level/level.fnt"
+			"name":"lijinhei_fnt",
+			"type":"font",
+			"url":"game_assets/font/lijinhei/lijinhei.fnt"
 		},
 		{
-			"name": "lijinhei_fnt",
-			"type": "font",
-			"url": "game_assets/font/lijinhei/lijinhei.fnt"
+			"name":"lijinhei_txt",
+			"type":"text",
+			"url":"game_assets/font/lijinhei/lijinhei.txt"
 		},
 		{
-			"name": "lijinhei_txt",
-			"type": "text",
-			"url": "game_assets/font/lijinhei/lijinhei.txt"
+			"name":"magic_fnt",
+			"type":"font",
+			"url":"game_assets/font/magic/magic.fnt"
 		},
 		{
-			"name": "magic_fnt",
-			"type": "font",
-			"url": "game_assets/font/magic/magic.fnt"
+			"name":"magic_max_fnt",
+			"type":"font",
+			"url":"game_assets/font/magic_max/magic_max.fnt"
 		},
 		{
-			"name": "magic_max_fnt",
-			"type": "font",
-			"url": "game_assets/font/magic_max/magic_max.fnt"
+			"name":"power_fnt",
+			"type":"font",
+			"url":"game_assets/font/power/power.fnt"
 		},
 		{
-			"name": "power_fnt",
-			"type": "font",
-			"url": "game_assets/font/power/power.fnt"
+			"name":"prop_fnt",
+			"type":"font",
+			"url":"game_assets/font/prop/prop.fnt"
 		},
 		{
-			"name": "prop_fnt",
-			"type": "font",
-			"url": "game_assets/font/prop/prop.fnt"
+			"name":"rein_fnt",
+			"type":"font",
+			"url":"game_assets/font/rein/rein.fnt"
 		},
 		{
-			"name": "rein_fnt",
-			"type": "font",
-			"url": "game_assets/font/rein/rein.fnt"
+			"name":"rmb_fnt",
+			"type":"font",
+			"url":"game_assets/font/rmb/rmb.fnt"
 		},
 		{
-			"name": "rmb_fnt",
-			"type": "font",
-			"url": "game_assets/font/rmb/rmb.fnt"
+			"name":"slot_fnt",
+			"type":"font",
+			"url":"game_assets/font/slot/slot.fnt"
 		},
 		{
-			"name": "slot_fnt",
-			"type": "font",
-			"url": "game_assets/font/slot/slot.fnt"
+			"name":"stage_fnt",
+			"type":"font",
+			"url":"game_assets/font/stage/stage.fnt"
 		},
 		{
-			"name": "stage_fnt",
-			"type": "font",
-			"url": "game_assets/font/stage/stage.fnt"
+			"name":"weapon_fnt",
+			"type":"font",
+			"url":"game_assets/font/weapon/weapon.fnt"
 		},
 		{
-			"name": "weapon_fnt",
-			"type": "font",
-			"url": "game_assets/font/weapon/weapon.fnt"
+			"name":"Hall_RoomBG2_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomBG2.png"
 		},
 		{
-			"name": "Hall_RoomBG2_png",
-			"type": "image",
-			"url": "game_assets/main/Hall_RoomBG2.png"
+			"name":"Hall_RoomBG1_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomBG1.png"
 		},
 		{
-			"name": "Hall_RoomBG1_png",
-			"type": "image",
-			"url": "game_assets/main/Hall_RoomBG1.png"
+			"name":"Hall_RoomBG3_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomBG3.png"
 		},
 		{
-			"name": "Hall_RoomBG3_png",
-			"type": "image",
-			"url": "game_assets/main/Hall_RoomBG3.png"
+			"name":"Hall_RoomName3_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomName3.png"
 		},
 		{
-			"name": "Hall_RoomName3_png",
-			"type": "image",
-			"url": "game_assets/main/Hall_RoomName3.png"
+			"name":"Hall_RoomName1_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomName1.png"
 		},
 		{
-			"name": "Hall_RoomName1_png",
-			"type": "image",
-			"url": "game_assets/main/Hall_RoomName1.png"
+			"name":"Hall_RoomName2_png",
+			"type":"image",
+			"url":"game_assets/main/Hall_RoomName2.png"
 		},
 		{
-			"name": "Hall_RoomName2_png",
-			"type": "image",
-			"url": "game_assets/main/Hall_RoomName2.png"
+			"name":"girl_1_png",
+			"type":"image",
+			"url":"game_assets/user/girl_1.png"
 		},
 		{
-			"name": "girl_1_png",
-			"type": "image",
-			"url": "game_assets/user/girl_1.png"
+			"name":"girl_1_lose_png",
+			"type":"image",
+			"url":"game_assets/user/girl_1_lose.png"
 		},
 		{
-			"name": "girl_1_lose_png",
-			"type": "image",
-			"url": "game_assets/user/girl_1_lose.png"
+			"name":"girl_1_win_png",
+			"type":"image",
+			"url":"game_assets/user/girl_1_win.png"
 		},
 		{
-			"name": "girl_1_win_png",
-			"type": "image",
-			"url": "game_assets/user/girl_1_win.png"
+			"name":"man_1_png",
+			"type":"image",
+			"url":"game_assets/user/man_1.png"
 		},
 		{
-			"name": "man_1_png",
-			"type": "image",
-			"url": "game_assets/user/man_1.png"
+			"name":"man_1_lose_png",
+			"type":"image",
+			"url":"game_assets/user/man_1_lose.png"
 		},
 		{
-			"name": "man_1_lose_png",
-			"type": "image",
-			"url": "game_assets/user/man_1_lose.png"
+			"name":"man_1_win_png",
+			"type":"image",
+			"url":"game_assets/user/man_1_win.png"
 		},
 		{
-			"name": "man_1_win_png",
-			"type": "image",
-			"url": "game_assets/user/man_1_win.png"
+			"name":"enter_png",
+			"type":"image",
+			"url":"game_assets/main/enter.png"
 		},
 		{
-			"name": "enter_png",
-			"type": "image",
-			"url": "game_assets/main/enter.png"
+			"name":"shap_1_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/shap_1.png"
 		},
 		{
-			"name": "shap_1_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/shap_1.png"
+			"name":"shap_2_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/shap_2.png"
 		},
 		{
-			"name": "shap_2_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/shap_2.png"
+			"name":"shap_3_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/shap_3.png"
 		},
 		{
-			"name": "shap_3_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/shap_3.png"
+			"name":"shap_4_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/shap_4.png"
 		},
 		{
-			"name": "shap_4_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/shap_4.png"
+			"name":"shap_5_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/shap_5.png"
 		},
 		{
-			"name": "shap_5_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/shap_5.png"
+			"name":"shap_6_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/shap_6.png"
 		},
 		{
-			"name": "shap_6_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/shap_6.png"
+			"name":"smallshap_1_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/smallshap_1.png"
 		},
 		{
-			"name": "smallshap_1_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/smallshap_1.png"
+			"name":"smallshap_2_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/smallshap_2.png"
 		},
 		{
-			"name": "smallshap_2_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/smallshap_2.png"
+			"name":"smallshap_3_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/smallshap_3.png"
 		},
 		{
-			"name": "smallshap_3_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/smallshap_3.png"
+			"name":"smallshap_4_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/smallshap_4.png"
 		},
 		{
-			"name": "smallshap_4_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/smallshap_4.png"
+			"name":"smallshap_5_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/smallshap_5.png"
 		},
 		{
-			"name": "smallshap_5_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/smallshap_5.png"
+			"name":"smallshap_6_png",
+			"type":"image",
+			"url":"game_assets/pork/shape/smallshap_6.png"
 		},
 		{
-			"name": "smallshap_6_png",
-			"type": "image",
-			"url": "game_assets/pork/shape/smallshap_6.png"
+			"name":"black_value_1_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_1.png"
 		},
 		{
-			"name": "black_value_1_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_1.png"
+			"name":"black_value_2_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_2.png"
 		},
 		{
-			"name": "black_value_2_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_2.png"
+			"name":"black_value_3_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_3.png"
 		},
 		{
-			"name": "black_value_3_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_3.png"
+			"name":"black_value_4_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_4.png"
 		},
 		{
-			"name": "black_value_4_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_4.png"
+			"name":"black_value_5_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_5.png"
 		},
 		{
-			"name": "black_value_5_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_5.png"
+			"name":"black_value_6_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_6.png"
 		},
 		{
-			"name": "black_value_6_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_6.png"
+			"name":"black_value_7_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_7.png"
 		},
 		{
-			"name": "black_value_7_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_7.png"
+			"name":"black_value_8_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_8.png"
 		},
 		{
-			"name": "black_value_8_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_8.png"
+			"name":"black_value_9_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_9.png"
 		},
 		{
-			"name": "black_value_9_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_9.png"
+			"name":"black_value_10_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_10.png"
 		},
 		{
-			"name": "black_value_10_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_10.png"
+			"name":"black_value_11_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_11.png"
 		},
 		{
-			"name": "black_value_11_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_11.png"
+			"name":"black_value_12_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_12.png"
 		},
 		{
-			"name": "black_value_12_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_12.png"
+			"name":"black_value_13_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_13.png"
 		},
 		{
-			"name": "black_value_13_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_13.png"
+			"name":"black_value_joker_png",
+			"type":"image",
+			"url":"game_assets/pork/value/black_value_joker.png"
 		},
 		{
-			"name": "black_value_joker_png",
-			"type": "image",
-			"url": "game_assets/pork/value/black_value_joker.png"
+			"name":"red_value_1_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_1.png"
 		},
 		{
-			"name": "red_value_1_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_1.png"
+			"name":"red_value_2_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_2.png"
 		},
 		{
-			"name": "red_value_2_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_2.png"
+			"name":"red_value_3_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_3.png"
 		},
 		{
-			"name": "red_value_3_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_3.png"
+			"name":"red_value_4_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_4.png"
 		},
 		{
-			"name": "red_value_4_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_4.png"
+			"name":"red_value_5_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_5.png"
 		},
 		{
-			"name": "red_value_5_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_5.png"
+			"name":"red_value_6_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_6.png"
 		},
 		{
-			"name": "red_value_6_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_6.png"
+			"name":"red_value_7_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_7.png"
 		},
 		{
-			"name": "red_value_7_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_7.png"
+			"name":"red_value_8_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_8.png"
 		},
 		{
-			"name": "red_value_8_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_8.png"
+			"name":"red_value_9_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_9.png"
 		},
 		{
-			"name": "red_value_9_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_9.png"
+			"name":"red_value_10_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_10.png"
 		},
 		{
-			"name": "red_value_10_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_10.png"
+			"name":"red_value_11_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_11.png"
 		},
 		{
-			"name": "red_value_11_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_11.png"
+			"name":"red_value_12_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_12.png"
 		},
 		{
-			"name": "red_value_12_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_12.png"
+			"name":"red_value_13_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_13.png"
 		},
 		{
-			"name": "red_value_13_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_13.png"
+			"name":"red_value_joker_png",
+			"type":"image",
+			"url":"game_assets/pork/value/red_value_joker.png"
 		},
 		{
-			"name": "red_value_joker_png",
-			"type": "image",
-			"url": "game_assets/pork/value/red_value_joker.png"
+			"name":"card_back_png",
+			"type":"image",
+			"url":"game_assets/pork/card/card_back.png"
 		},
 		{
-			"name": "card_back_png",
-			"type": "image",
-			"url": "game_assets/pork/card/card_back.png"
+			"name":"card_bigtip_png",
+			"type":"image",
+			"url":"game_assets/pork/card/card_bigtip.png"
 		},
 		{
-			"name": "card_bigtip_png",
-			"type": "image",
-			"url": "game_assets/pork/card/card_bigtip.png"
+			"name":"card_flag_png",
+			"type":"image",
+			"url":"game_assets/pork/card/card_flag.png"
 		},
 		{
-			"name": "card_flag_png",
-			"type": "image",
-			"url": "game_assets/pork/card/card_flag.png"
+			"name":"card_front_png",
+			"type":"image",
+			"url":"game_assets/pork/card/card_front.png"
 		},
 		{
-			"name": "card_front_png",
-			"type": "image",
-			"url": "game_assets/pork/card/card_front.png"
+			"name":"card_shadow_png",
+			"type":"image",
+			"url":"game_assets/pork/card/card_shadow.png"
 		},
 		{
-			"name": "card_shadow_png",
-			"type": "image",
-			"url": "game_assets/pork/card/card_shadow.png"
+			"name":"card_star_png",
+			"type":"image",
+			"url":"game_assets/pork/card/card_star.png"
 		},
 		{
-			"name": "card_star_png",
-			"type": "image",
-			"url": "game_assets/pork/card/card_star.png"
+			"name":"smallcard_back_png",
+			"type":"image",
+			"url":"game_assets/pork/card/smallcard_back.png"
 		},
 		{
-			"name": "smallcard_back_png",
-			"type": "image",
-			"url": "game_assets/pork/card/smallcard_back.png"
+			"name":"smallcard_front_png",
+			"type":"image",
+			"url":"game_assets/pork/card/smallcard_front.png"
 		},
 		{
-			"name": "smallcard_front_png",
-			"type": "image",
-			"url": "game_assets/pork/card/smallcard_front.png"
+			"name":"bg_sandbeach_png",
+			"type":"image",
+			"url":"game_assets/main/bg_sandbeach.png"
 		}
 	]
 }
