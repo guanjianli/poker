@@ -1,0 +1,38 @@
+{
+  "name": "poker_server",
+  "version": "0.1.0",
+  "description": "poker project",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guanjianli/poker.git"
+  },
+  "author": "guanjianli",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "npm run build-sass && npm run build-ts && npm run tslint && npm run copy-static-assets",
+    "serve": "node Main.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "test": "jest --forceExit --coverage --verbose",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "build-sass": "node-sass src/public/css/main.scss dist/public/css/main.css",
+    "watch-sass": "node-sass -w src/public/css/main.scss dist/public/css/main.css",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "debug": "npm run build && npm run watch-debug",
+    "serve-debug": "nodemon --inspect dist/server.js",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "request": "^2.83.0",
+	"underscore":""
+  },
+  "devDependencies": {
+    "@types/async": "^2.0.45",
+    "@types/underscore":"",
+    "typescript":""
+  }
+}

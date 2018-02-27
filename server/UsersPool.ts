@@ -21,7 +21,7 @@ module poker {
         }
 
         public removePerson(id: number) {
-            this.personList = _.reject(this.personList, function (item) {
+            this.personList = _.reject(this.personList, function (item:any) {
                 return item.id == id;
             });
         }

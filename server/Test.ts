@@ -1,4 +1,5 @@
-class User {
+let _ = require("underscore");
+class Test {
     public id: number;
     public name: string;
     public lv: number;
@@ -27,5 +28,8 @@ class User {
     public escToPlay() {
 
     }
+    public test(){
+        console.log(_.random(10,20));
+    }
 }
-module.exports = {User};
+export default  Test;
