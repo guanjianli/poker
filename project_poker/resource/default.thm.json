@@ -30,7 +30,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/game_skins/main/MainPanelSkin.exml",
-		"resource/game_skins/pork/card.exml",
+		"resource/game_skins/room/card.exml",
 		"resource/game_skins/room/room.exml"
 	],
 	"path": "resource/default.thm.json"

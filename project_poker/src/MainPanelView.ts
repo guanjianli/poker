@@ -56,9 +56,11 @@ class MainPanelView extends eui.Component {
     }
 
     private userName: string;
-
+    
+    public roomMode:eui.Group;
     private Done(): void {
-        this.userName = "wheheheheheheen";
+        this.userName = this.roomMode.name;//"wheheheheheheen";
+
         //this.power.text = "1515";
     }
 

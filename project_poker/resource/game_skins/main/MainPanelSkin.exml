@@ -10,7 +10,7 @@
                     <e:Label text="{userName}" x="83" y="9.5" fontFamily="微软雅黑" size="22" />
 
             </e:Group>
-            <e:Group id='roomMode' anchorOffsetX="0" percentWidth="60" anchorOffsetY="0"  horizontalCenter="0" verticalCenter="-30">
+            <e:Group id='roomMode' name="xxx" anchorOffsetX="0" percentWidth="60" anchorOffsetY="0"  horizontalCenter="0" verticalCenter="-30">
                 <e:Group name="picgrp" touchChildren="true" touchEnabled="true" id="mode_1" horizontalCenter="0" verticalCenter="0" percentWidth="33">
                     <e:Image name="pic1" source="Hall_RoomBG3_png" />
                     <e:Image source="Hall_RoomName2_png"  horizontalCenter="4" bottom="0"/>

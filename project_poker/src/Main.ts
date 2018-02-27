@@ -69,8 +69,10 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        var mp =  new MainPanelView();
-        this.addChild(mp);
+        // var mp =  new MainPanelView();
+        // this.addChild(mp);
+        var room = new Room();
+        this.addChild(room);
     }
 
 }
