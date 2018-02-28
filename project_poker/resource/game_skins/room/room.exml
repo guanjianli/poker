@@ -5,39 +5,37 @@
             <e:Rect height="100%" width="100%" fillColor="0xD2EBD8" y="0" />
             <e:Group id='myView' touchEnabled="false" y="0" x="0">
                 <e:Image source="main_bg" width="100%" y="0" x="0" />
-                <e:Group id="self_user" bottom="6">
-                    <e:Image source="girl_1_png" />
-                    <e:Label text="李观健" textColor="0xffcc00" borderColor="0x6666ff" border="true" width="189" height="32" background="true" backgroundColor="0x6699ff" textAlign="center" left="120" bottom="24" anchorOffsetX="0"/>
-                    <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" left="342" y="59"/>
-                    <e:Label text="0" textColor="0xffcc00" left="398" borderColor="0x6666ff" border="true" height="32" anchorOffsetX="0" width="89" background="true" backgroundColor="0x6699ff" y="64"/>
-					<e:Label text="基础分：0" textColor="0xffcc00" borderColor="0x6666ff" border="true" height="32" anchorOffsetX="0" width="193" background="true" backgroundColor="0x6699ff" y="64" x="529"/>
-                    <e:Button label="规则"  x="796" y="55"></e:Button>
-                    <e:List id="self_cards"  allowMultipleSelection="true" itemRendererSkinName="card"  percentWidth="80" top="20" >
+                <e:Group id="self_user" bottom="6" percentHeight="36" percentWidth="100">
+                    <e:List id="self_cards"  allowMultipleSelection="true" itemRendererSkinName="card"  percentWidth="80" top="20" scaleX="0.6" scaleY="0.6" horizontalCenter="0" >
                         <e:layout>
-                            <e:TileLayout horizontalGap="-100" verticalGap="-80" orientation="rows"/>
+                            <e:TileLayout id="layout_selfCards" horizontalGap="-100" verticalGap="-80" orientation="rows" requestedRowCount="1"/>
                         </e:layout>
-
-
-
                     </e:List>
+                    <e:Image source="girl_1_png" bottom="10" />
+                    <e:Label text="张三李四" verticalAlign="middle" textColor="0xffcc00" borderColor="0x6666ff" border="true" percentHeight="13" percentWidth="12" background="true" backgroundColor="0x6699ff" textAlign="center" left="120" bottom="26" />
+                    <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" left="342" y="59" bottom="26"/>
+                    <e:Label text="0" textColor="0xffcc00" borderColor="0x6666ff" border="true" verticalAlign="middle" percentHeight="13" percentWidth="10" background="true" backgroundColor="0x6699ff" bottom="26" left="380"/>
+					<e:Label text="基础分：0" textColor="0xffcc00" borderColor="0x6666ff" border="true" verticalAlign="middle" percentHeight="13" percentWidth="16" background="true" backgroundColor="0x6699ff" bottom="26" horizontalCenter="0"/>
+                    <e:Button label="规则"  x="796" y="55" bottom="24"></e:Button>
+                    
                 </e:Group>
-                <e:Group id="left_user" left="32" y="168.5">
+                <e:Group id="left_user" left="32" y="168.5" percentHeight="26">
                     <e:Image source="girl_1_png" horizontalCenter="0"/>
                     <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" x="12" y="117"/>
-                    <e:Label text="0" textColor="0xffcc00"  x="45" y="123" borderColor="0x6666ff" border="true" anchorOffsetX="0" width="70" background="true" backgroundColor="0x6699ff"/>
-                    <e:Label text="0123456789" textColor="0x6666ff" x="1" y="159" horizontalCenter="5" anchorOffsetY="0" height="19" anchorOffsetX="0" width="161"/>
+                    <e:Label text="0" textColor="0xffcc00" verticalAlign="middle" borderColor="0x6666ff" border="true" background="true" backgroundColor="0x6699ff" percentWidth="40" bottom="36" right="42"/>
+                    <e:Label text="012345678" textColor="0x6666ff" percentWidth="100" percentHeight="12" horizontalCenter="0" bottom="0"/>
                 </e:Group>
-                <e:Group id="top_user" top="20" horizontalCenter="0.5" anchorOffsetX="0" width="171" anchorOffsetY="0" height="169">
-                    <e:Image source="girl_1_png" horizontalCenter="0"/>
-                    <e:Image source="man_1_png" anchorOffsetX="0" width="32" anchorOffsetY="0" height="31" x="44" y="108"/>
-                    <e:Label text="0" textColor="0xffcc00"  x="76" y="111" borderColor="0x6666ff" border="true" anchorOffsetX="0" width="65" background="true" backgroundColor="0x6699ff" anchorOffsetY="0" height="22"/>
-                    <e:Label text="0123456789" textColor="0x6666ff" x="1" y="139" horizontalCenter="1" anchorOffsetY="0" height="19" anchorOffsetX="0" width="161"/>
-                </e:Group>
-                <e:Group id="righ_user" right="8" y="168.5">
+                <e:Group id="top_user" top="20" horizontalCenter="0.5" percentHeight="26">
                     <e:Image source="girl_1_png" horizontalCenter="0"/>
                     <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" x="12" y="117"/>
-                    <e:Label text="0" textColor="0xffcc00"  x="45" y="123" borderColor="0x6666ff" border="true" anchorOffsetX="0" width="70" background="true" backgroundColor="0x6699ff"/>
-                    <e:Label text="0123456789" textColor="0x6666ff" x="1" y="159" horizontalCenter="5" anchorOffsetY="0" height="19" anchorOffsetX="0" width="161"/>
+                    <e:Label text="0" textColor="0xffcc00" verticalAlign="middle" borderColor="0x6666ff" border="true" background="true" backgroundColor="0x6699ff" percentWidth="40" bottom="36" right="42"/>
+                    <e:Label text="012345678" textColor="0x6666ff" percentWidth="100" percentHeight="12" horizontalCenter="0" bottom="0"/>
+                </e:Group>
+                <e:Group id="righ_user" right="20" top="168.5" percentHeight="26">
+                    <e:Image source="girl_1_png" horizontalCenter="0"/>
+                    <e:Image source="man_1_png" anchorOffsetX="0" width="39" anchorOffsetY="0" height="42" x="12" y="117"/>
+                    <e:Label text="0" textColor="0xffcc00" verticalAlign="middle" borderColor="0x6666ff" border="true" background="true" backgroundColor="0x6699ff" percentWidth="40" bottom="36" right="42"/>
+                    <e:Label text="012345678" textColor="0x6666ff" percentWidth="100" percentHeight="12" horizontalCenter="0" bottom="0"/>
                 </e:Group>
                 
                 

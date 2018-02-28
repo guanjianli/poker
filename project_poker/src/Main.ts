@@ -35,7 +35,7 @@ class Main extends eui.UILayer {
         await platform.login();
         const userInfo = await platform.getUserInfo();
         console.log(userInfo);
-
+        
     }
 
     private async loadResource() {
@@ -68,11 +68,21 @@ class Main extends eui.UILayer {
      * 创建场景界面
      * Create scene interface
      */
+    
     protected createGameScene(): void {
         // var mp =  new MainPanelView();
         // this.addChild(mp);
         var room = new Room();
         this.addChild(room);
+        room.addEventListener(DealEvent.DEAL,room.addCard,room);
+        for(var j=0;j<4;j++){
+            for(var i=1;i<14;i++) {
+            
+            room.getCard("black_value_" + i + "_png","shap_2_png");
+
+            }
+        }       
+        room.removeEventListener(DealEvent.DEAL,room.addCard,room);
     }
 
 }

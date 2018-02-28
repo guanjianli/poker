@@ -16,6 +16,7 @@
 		"bin-debug/Platform.js",
 		"bin-debug/Service.js",
 		"bin-debug/ThemeAdapter.js",
+		"bin-debug/game/room/DealEvent.js",
 		"bin-debug/game/room/Room.js"
 	]
 }
