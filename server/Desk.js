@@ -1,14 +1,13 @@
 "use strict";
-var poker;
-(function (poker) {
-    var Desk = /** @class */ (function () {
-        function Desk() {
-            this.chairs = [];
-            for (var i = 0; i < 4; i++) {
-                this.chairs.push(new poker.Chair());
-            }
+Object.defineProperty(exports, "__esModule", { value: true });
+var Chair_1 = require("./Chair");
+var Desk = /** @class */ (function () {
+    function Desk() {
+        this.chairs = [];
+        for (var i = 0; i < 4; i++) {
+            this.chairs.push(new Chair_1.Chair());
         }
-        return Desk;
-    }());
-    poker.Desk = Desk;
-})(poker || (poker = {}));
+    }
+    return Desk;
+}());
+exports.Desk = Desk;

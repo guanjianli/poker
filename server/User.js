@@ -1,9 +1,11 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var User = /** @class */ (function () {
     function User() {
         this.id = 0;
         this.name = "";
         this.lv = 0;
+        this.isPlaying = false;
     }
     //加入一个桌子
     User.prototype.joinDesk = function () {
@@ -19,4 +21,4 @@ var User = /** @class */ (function () {
     };
     return User;
 }());
-module.exports = { User: User };
+exports.default = User;

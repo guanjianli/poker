@@ -1,12 +1,14 @@
-class User {
+export default class User {
     public id: number;
     public name: string;
     public lv: number;
+    public isPlaying: boolean;
 
     constructor() {
         this.id = 0;
         this.name = "";
         this.lv = 0;
+        this.isPlaying = false;
     }
 
     //加入一个桌子
@@ -28,4 +30,3 @@ class User {
 
     }
 }
-module.exports = {User};

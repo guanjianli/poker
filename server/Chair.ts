@@ -1,20 +1,19 @@
-module poker {
-    export  class Chair {
-        public static Free = "free";
-        public static Busy = "busy";
-        public status = Chair.Free;
+import User from "./User";
+export class Chair {
+    public static Free = "free";
+    public static Busy = "busy";
+    public status = Chair.Free;
 
-        public user: any;
+    public user: any;
 
-        constructor() {
-        }
+    constructor() {
+    }
 
-        public sitDown(user: User): void {
-            this.user = user;
-        }
+    public sitDown(user: User): void {
+        this.user = user;
+    }
 
-        public sitUp(): void {
-            this.user = null;
-        }
+    public sitUp(): void {
+        this.user = null;
     }
 }
