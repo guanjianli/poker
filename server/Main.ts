@@ -11,12 +11,11 @@ for (let i = 0; i < 10; i++) {
 	UsersPool.instance.addPerson(user);
 }
 
-
 //从用户池中拿到几个用户
 //todo 匹配规则
 
-//创建一个房间
-let room = new Room();
-//将这个房间加到可匹配的房间列表
-RoomsPool.instance.addRoom(room);
+//系统自动打开一个房间,确定是开的
+RoomsPool.instance.createRoom();
+
+let room = RoomsPool.instance.getNoFullRoom();
 

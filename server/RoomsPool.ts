@@ -21,12 +21,20 @@ export default class RoomsPool {
 
     public addRoom(room: Room) {
         this.roomList.push(room);
-        console.log("room id -> "  + room.id);
+        console.log("room id -> " + room.id);
     }
 
-    public destroyRoom(id: number) {
+    public createRoom() {
+        //创建一个房间
+        let room = new Room();
+        room.id = _.random(10000, 99999);
+        //将这个房间加到可匹配的房间列表
+        RoomsPool.instance.addRoom(room);
+    }
+
+    public destroyRoom(room:Room) {
         this.roomList = _.reject(this.roomList, function (item: any) {
-            return item.id == id;
+            return item.id == room.id;
         });
     }
 
