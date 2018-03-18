@@ -30,8 +30,19 @@ export default class UsersPool {
 
     //获得当前空闲的人
     public getFreePerson() {
-        _.filter(this.personList, function (item: User) {
+        return _.filter(this.personList, function (item: User) {
             return item.isPlaying == false
         })
     }
+
+    public createAI(){
+        let user = new User();
+        user.name = "test" + (Math.random() * 100 >> 0);
+        user.id = 1000 + (Math.random() * 100 >> 0);
+        user.lv = Math.random() * 100 >> 0;
+        user.isAI = true;
+        UsersPool.instance.addPerson(user);
+        return user
+    }
+
 }
